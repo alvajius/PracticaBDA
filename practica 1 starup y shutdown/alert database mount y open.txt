@@ -1,0 +1,59 @@
+alter database mount
+Wed Nov 20 21:20:00 2024
+Successful mount of redo thread 1, with mount id 3066724667
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: alter database mount
+Wed Nov 20 21:20:17 2024
+alter database open
+Wed Nov 20 21:20:17 2024
+LGWR: STARTING ARCH PROCESSES
+Wed Nov 20 21:20:17 2024
+ARC0 started with pid=24, OS id=5806
+ARC0: Archival started
+LGWR: STARTING ARCH PROCESSES COMPLETE
+ARC0: STARTING ARCH PROCESSES
+Wed Nov 20 21:20:18 2024
+ARC1 started with pid=25, OS id=5809
+Wed Nov 20 21:20:18 2024
+ARC2 started with pid=26, OS id=5811
+Wed Nov 20 21:20:18 2024
+ARC3 started with pid=27, OS id=5813
+ARC1: Archival started
+ARC2: Archival started
+ARC1: Becoming the 'no FAL' ARCH
+ARC1: Becoming the 'no SRL' ARCH
+ARC2: Becoming the heartbeat ARCH
+Thread 1 opened at log sequence 2
+  Current log# 4 seq# 2 mem# 0: /u01/app/oracle/fast_recovery_area/XE/onlinelog/redo4.log
+  Current log# 4 seq# 2 mem# 1: /u01/app/oracle/fast_recovery_area/XE/onlinelog/redo4b
+Successful open of redo thread 1
+Wed Nov 20 21:20:19 2024
+SMON: enabling cache recovery
+[5320] Successfully onlined Undo Tablespace 2.
+Undo initialization finished serial:0 start:3471324 end:3471374 diff:50 (0 seconds)
+Verifying file header compatibility for 11g tablespace encryption..
+Verifying 11g file header compatibility for tablespace encryption completed
+SMON: enabling tx recovery
+Database Characterset is AL32UTF8
+Opening with Resource Manager plan: INTERNAL_PLAN_XE
+Wed Nov 20 21:20:19 2024
+Starting background process VKRM
+Wed Nov 20 21:20:19 2024
+VKRM started with pid=28, OS id=5815
+replication_dependency_tracking turned off (no async multimaster replication found)
+Starting background process QMNC
+Wed Nov 20 21:20:19 2024
+QMNC started with pid=29, OS id=5818
+Completed: alter database open
+ARC3: Archival started
+ARC0: STARTING ARCH PROCESSES COMPLETE
+Wed Nov 20 21:20:20 2024
+Starting background process CJQ0
+Wed Nov 20 21:20:20 2024
+CJQ0 started with pid=34, OS id=5833
+Wed Nov 20 21:20:20 2024
+db_recovery_file_dest_size of 10240 MB is 14.86% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.

@@ -1,0 +1,123 @@
+Completed: ALTER DATABASE OPEN
+Starting background process CJQ0
+Wed Nov 20 21:01:51 2024
+db_recovery_file_dest_size of 10240 MB is 14.86% used. This is a
+user-specified limit on the amount of space that will be used by this
+database for recovery-related files, and does not reflect the amount of
+space available in the underlying filesystem or ASM diskgroup.
+Wed Nov 20 21:01:51 2024
+CJQ0 started with pid=33, OS id=4665
+
+Wed Nov 20 21:11:17 2024
+Shutting down instance (immediate)
+Shutting down instance: further logons disabled
+Wed Nov 20 21:11:18 2024
+Stopping background process QMNC
+Stopping background process CJQ0
+Stopping background process MMNL
+Stopping background process MMON
+License high water mark = 5
+All dispatchers and shared servers shutdown
+ALTER DATABASE CLOSE NORMAL
+Wed Nov 20 21:11:21 2024
+SMON: disabling tx recovery
+SMON: disabling cache recovery
+Wed Nov 20 21:11:21 2024
+Shutting down archive processes
+Archiving is disabled
+Wed Nov 20 21:11:21 2024
+ARCH shutting down
+ARC3: Archival stopped
+Wed Nov 20 21:11:21 2024
+ARCH shutting down
+ARC2: Archival stopped
+Wed Nov 20 21:11:21 2024
+ARCH shutting down
+ARC0: Archival stopped
+Wed Nov 20 21:11:21 2024
+ARCH shutting down
+ARC1: Archival stopped
+Thread 1 closed at log sequence 2
+Successful close of redo thread 1
+Completed: ALTER DATABASE CLOSE NORMAL
+ALTER DATABASE DISMOUNT
+Completed: ALTER DATABASE DISMOUNT
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+ARCH: Archival disabled due to shutdown: 1089
+Shutting down archive processes
+Archiving is disabled
+Wed Nov 20 21:11:23 2024
+Stopping background process VKTM
+Wed Nov 20 21:11:25 2024
+Instance shutdown complete
+Wed Nov 20 21:11:30 2024
+Starting ORACLE instance (normal)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Picked latch-free SCN scheme 3
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+Autotune of undo retention is turned on.
+IMODE=BR
+ILAT =15
+LICENSE_MAX_USERS = 0
+SYS auditing is disabled
+Starting up:
+Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production.
+Using parameter settings in server-side spfile /u01/app/oracle/product/11.2.0/xe                                                                                       /dbs/spfileXE.ora
+System parameters with non-default values:
+  processes                = 80
+  sessions                 = 142
+  memory_target            = 676M
+  control_files            = "/u01/app/oracle/oradata/XE/control.dbf"
+  control_files            = "/u01/app/oracle/oradata/XE/control2.dbf"
+  compatible               = "11.2.0.0.0"
+  db_recovery_file_dest    = "/u01/app/oracle/fast_recovery_area"
+  db_recovery_file_dest_size= 10G
+  undo_management          = "AUTO"
+  undo_tablespace          = "UNDOTBS1"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=XEXDB)"
+  shared_servers           = 5
+  job_queue_processes      = 4
+  audit_file_dest          = "/u01/app/oracle/admin/XE/adump"
+  db_name                  = "XE"
+  open_cursors             = 300
+  diagnostic_dest          = "/u01/app/oracle"
+Wed Nov 20 21:11:31 2024
+PMON started with pid=2, OS id=5274
+Wed Nov 20 21:11:31 2024
+PSP0 started with pid=3, OS id=5276
+Wed Nov 20 21:11:32 2024
+VKTM started with pid=4, OS id=5279
+VKTM running at (100ms) precision
+Wed Nov 20 21:11:32 2024
+GEN0 started with pid=5, OS id=5283
+Wed Nov 20 21:11:32 2024
+DIAG started with pid=6, OS id=5285
+Wed Nov 20 21:11:32 2024
+DBRM started with pid=7, OS id=5287
+Wed Nov 20 21:11:32 2024
+DIA0 started with pid=8, OS id=5289
+Wed Nov 20 21:11:32 2024
+MMAN started with pid=9, OS id=5291
+Wed Nov 20 21:11:32 2024
+DBW0 started with pid=10, OS id=5293
+Wed Nov 20 21:11:32 2024
+LGWR started with pid=11, OS id=5295
+Wed Nov 20 21:11:32 2024
+CKPT started with pid=12, OS id=5297
+Wed Nov 20 21:11:32 2024
+SMON started with pid=13, OS id=5299
+Wed Nov 20 21:11:32 2024
+RECO started with pid=14, OS id=5301
+Wed Nov 20 21:11:32 2024
+MMON started with pid=15, OS id=5303
+starting up 1 dispatcher(s) for network address '(ADDRESS=(PARTIAL=YES)(PROTOCOL                                                                                       =TCP))'...
+Wed Nov 20 21:11:32 2024
+MMNL started with pid=16, OS id=5305
+starting up 5 shared server(s) ...
+ORACLE_BASE not set in environment. It is recommended
+that ORACLE_BASE be set in the environment
+Reusing ORACLE_BASE from an earlier startup = /u01/app/oracle
